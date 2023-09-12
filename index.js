@@ -6,7 +6,8 @@ const swiper = new Swiper('#swiper-team', {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 2,
+      slidesPerView: 1,
+      centeredSlides: true,
     },
     // when window width is >= 480px
     1175: {

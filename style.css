@@ -543,6 +543,9 @@ section.intro .text-content h3 {
 
 .grid-cards-container .grid-card.image {
   padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .grid-cards-container .grid-card h4 {
@@ -966,6 +969,10 @@ section.intro .text-content h3 {
     overflow: hidden;
   }
 
+  .content {
+    max-width: 100%;
+  }
+
   .site-header nav {
     display: none;
   }
@@ -1010,6 +1017,7 @@ section.intro .text-content h3 {
 
   .block.why {
     padding-top: 50px;
+    margin-bottom: 50px;
   }
 
   .info-cards-container {
@@ -1049,6 +1057,7 @@ section.intro .text-content h3 {
     background-position: 0 35px;
     background-size: 50%;
     padding-left: 0;
+    margin-bottom: 50px;
   }
 
   .block.what .content p {
@@ -1073,6 +1082,232 @@ section.intro .text-content h3 {
   .block.what .content .actions .link {
     font-size: 14px;
     color: #616161;
+  }
+
+  .block.features .content {
+    border-radius: 40px;
+    max-width: 100%;
+    padding: 48px 16px;
+  }
+
+  .block.features .info-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+
+  .block.features .info-cards-container .info-card {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .block.offers .content {
+    padding: 16px;
+    padding-top: 50px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: -25px -65px;
+  }
+
+  .block.offers .info-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
+
+  .block.offers .info-cards-container .info-card h3 {
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 24px;
+  }
+
+  .block.offers .info-cards-container .info-card p {
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 35px;
+  }
+
+  .block.promotion {
+    padding-bottom: 50px;
+  }
+
+  .block.promotion .container {
+    padding-top: 50px;
+  }
+
+  .block.promotion h2 .heading-label {
+    margin-bottom: 5px;
+    margin-left: -5px;
+  }
+
+  .heading-label {
+    font-size: 20px;
+    line-height: 120%;
+    padding: 12px 24px;
+  }
+
+  .block.promotion .info-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 15px;
+    padding-top: 0;
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .block.promotion .top {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+
+  .block.promotion .bottom {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    background-position: -130px 0;
+    padding-left: 0;
+    padding-top: 50px;
+  }
+
+  .block.promotion ul li {
+    font-size: 14px;
+  }
+
+  .block.events {
+    padding-bottom: 50px;
+  }
+
+  .block.events h2 {
+    max-width: 70%;
+  }
+
+  .grid-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .grid-cards-container .grid-card {
+    height: 180px;
+  }
+
+  .grid-cards-container .grid-card h4 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .grid-cards-container .grid-card p {
+    font-size: 12px;
+  }
+
+  .grid-cards-container .grid-card.empty {
+    display: none;
+  }
+
+  .block.reviews {
+    padding-bottom: 50px;
+  }
+
+  .reviews-content {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .reviews-content .summary {
+    width: 100%;
+    min-width: unset;
+    margin: 0;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+  }
+
+  .block.team {
+    padding-bottom: 50px;
+  }
+
+  .block.team .content {
+    padding: 50px 15px;
+    max-width: 100%;
+    border-radius: 40px;
+  }
+
+  .block.team .heading-text {
+    font-size: 12px;
+    width: 80%;
+    margin-bottom: 24px;
+  }
+
+  .block.awards {
+    padding-bottom: 50px;
+  }
+
+  .block.awards .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .block.awards aside {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .block.awards aside p {
+    width: 60%;
+    font-size: 12px;
+  }
+
+  .block.awards .awards-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .block.awards .awards-container .award {
+    width: 180px;
+    min-width: 180px;
+    height: 130px;
+    margin-right: 15px;
+  }
+
+  .block.completion {
+    padding-bottom: 100px;
+    background-image: url(public/images/why-certificate-background2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 110%;
+  }
+
+  .block.completion .top {
+    padding: 16px 0;
+  }
+
+  .block.completion .top h2 {
+    width: 85%;
+  }
+
+  .block.completion .bottom {
+    padding-right: 0;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 55%;
+  }
+
+  .block.completion .bottom p {
+    margin-right: 0;
+  }
+
+  .block.completion .content {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: top 5% left 0%;
+    background-size: 48%;
   }
 }
 
