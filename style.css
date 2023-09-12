@@ -1376,6 +1376,7 @@ section.intro .text-content h3 {
     font-size: 12px;
     width: 100%;
   }
+}
 
 @media (min-width: 1175px) and (max-width: 1470px) {
   .container {
