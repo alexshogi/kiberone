@@ -399,7 +399,7 @@ section.intro .text-content h3 {
   display: inline-flex;
   align-items: center;
   background-color: #e7b400;
-  color: #ffffff;
+  color: #ffffff !important;
   border-radius: 20px;
   transform: rotateZ(-3deg);
   margin-top: -5px;
@@ -797,6 +797,7 @@ section.intro .text-content h3 {
   font-size: 20px;
   line-height: 120%;
   margin-left: -12px;
+  color: #ffffff;
 }
 
 .block.completion .bottom h3 {
@@ -850,4 +851,8 @@ section.intro .text-content h3 {
   transform: translateY(22px);
   font-size: 16px;
   pointer-events: none;
+}
+
+.site-footer {
+  padding: 100px 0;
 }
