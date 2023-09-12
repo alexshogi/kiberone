@@ -959,7 +959,124 @@ section.intro .text-content h3 {
 
 /* ------------ MEDIA ------------ */
 
-@media (max-width: 1470px) {
+@media (max-width: 1174px) {
+  .container {
+    max-width: 100%;
+    padding: 0 16px;
+    overflow: hidden;
+  }
+
+  .site-header nav {
+    display: none;
+  }
+
+  .site-header .header-contacts {
+    display: none;
+  }
+
+  .site-header .button {
+    display: none;
+  }
+
+  section.intro {
+    min-height: calc(100vh - 100px);
+    max-height: calc(100vh - 100px);
+    height: calc(100vh - 100px);
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  section.intro .text-content {
+    height: 100%;
+    max-width: 80%;
+    padding-top: 10px;
+  }
+
+  section.intro .text-content h1 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+
+  .link-button {
+    height: 52px;
+    font-size: 14px;
+    padding: 0 44px;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  .block.why {
+    padding-top: 50px;
+  }
+
+  .info-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+    padding: 0;
+  }
+
+  .info-cards-container .info-card h3 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 8px;
+  }
+
+  .info-cards-container .info-card .info-card-icon:after {
+    height: 32px;
+    width: 32px;
+    top: -4px;
+    left: -4px;
+  }
+
+  .info-cards-container .info-card .info-card-icon {
+    margin-left: 4px;
+    margin-bottom: 10px;
+  }
+
+  .info-cards-container .info-card p {
+    font-size: 12px;
+    line-height: 120%;
+    color: #616161;
+  }
+
+  .block.what {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 0 35px;
+    background-size: 50%;
+    padding-left: 0;
+  }
+
+  .block.what .content p {
+    font-size: 14px;
+    line-height: 130%;
+    color: #616161;
+    margin-bottom: 16px;
+  }
+
+  .block.what .content .actions {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block.what .content .actions .link-button {
+    margin-right: 0;
+    width: fit-content;
+    margin-bottom: 24px;
+  }
+
+  .block.what .content .actions .link {
+    font-size: 14px;
+    color: #616161;
+  }
+}
+
+@media (min-width: 1175px) and (max-width: 1470px) {
   .container {
     max-width: 1100px;
     padding: 0 16px;
