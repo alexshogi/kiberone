@@ -655,3 +655,64 @@ section.intro .text-content h3 {
   font-size: 12px;
   line-height: 120%;
 }
+
+.block.team {
+  padding-bottom: 100px;
+}
+
+.block.team .content {
+  padding: 100px;
+  max-width: 1316px;
+  background-color: #f8f8f8;
+  border-radius: 55px;
+}
+
+.block.team h2 {
+  margin-bottom: 25px;
+}
+
+.block.team .heading-text {
+  font-size: 20px;
+  line-height: 120%;
+  color: #616161;
+  width: 46%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.team-member {
+  width: 270px;
+  height: 450px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.team-member-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.team-member:hover .team-member-content {
+  transform: rotateY( 180deg ) ;
+}
+
+.team-member .front,
+.team-member .back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  backface-visibility: hidden;
+}
+
+.team-member .back {
+  transform: rotateY( 180deg );
+}
