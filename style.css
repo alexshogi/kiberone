@@ -515,3 +515,45 @@ section.intro .text-content h3 {
   text-align: left;
   max-width: 40%;
 }
+
+.grid-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.grid-cards-container .grid-card {
+  height: 260px;
+  border-radius: 25px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.grid-cards-container .grid-card.secondary {
+  background-color: #92d6d8;
+}
+
+.grid-cards-container .grid-card.empty {
+  background-color: transparent;
+}
+
+.grid-cards-container .grid-card.image {
+  padding: 0;
+}
+
+.grid-cards-container .grid-card h4 {
+  font-size: 24px;
+  line-height: 25px;
+  white-space: break-space;
+  width: min-content;
+}
+
+.grid-cards-container .grid-card p {
+  font-size: 16px;
+  line-height: 120%;
+  color: #616161;
+}
