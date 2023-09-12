@@ -717,3 +717,43 @@ section.intro .text-content h3 {
 .team-member .back {
   transform: rotateY( 180deg );
 }
+
+.block.awards {
+  padding-bottom: 100px;
+}
+
+.block.awards .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block.awards aside {
+  width: calc(25% - 25px);
+  margin-right: 25px;
+}
+
+.block.awards aside h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.block.awards aside p {
+  color: #616161;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.block.awards .awards-container {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.block.awards .awards-container .award {
+  width: 270px;
+  height: 190px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
