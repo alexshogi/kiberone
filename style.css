@@ -690,6 +690,7 @@ section.intro .text-content h3 {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+  border: 2px solid #f8f8f8;
 }
 
 .team-member-content {
