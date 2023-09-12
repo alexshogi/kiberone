@@ -856,3 +856,103 @@ section.intro .text-content h3 {
 .site-footer {
   padding: 100px 0;
 }
+
+.site-footer .top {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.site-footer .top .gmap {
+  height: 380px;
+  width: 50%;
+  border-radius: 25px;
+  background-color: #d8d8d8;
+}
+
+.site-footer .top .contacts {
+  padding-left: 70px;
+}
+
+.site-footer .top .heading-label {
+  font-size: 32px;
+  padding: 8px 32px;
+  line-height: 120%;
+  border-radius: 20px;
+  margin-bottom: 36px;
+}
+
+.site-footer .top ul {
+  margin-bottom: 28px;
+}
+
+.site-footer .top ul li {
+  font-size: 20px;
+  line-height: 120%;
+  color: #8d8d8d;
+  font-weight: 300;
+}
+
+.site-footer .top .socials {
+  display: flex;
+  align-items: center;
+}
+
+.site-footer .top .socials a {
+  display: inline-block;
+  height: 34px;
+  width: 34px;
+  margin-right: 5px;
+}
+
+.site-footer .divider {
+  height: 2px;
+  background-color: #d9d9d9;
+}
+
+.site-footer .bottom {
+  padding-top: 50px;
+  display: flex;
+}
+
+.site-footer .logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  margin-left: 0 !important;
+}
+
+.site-footer .logo-wrapper .company-title {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 1px;
+}
+
+.site-footer .bottom .info {
+  font-size: 16px;
+  line-height: 120%;
+  color: #8d8d8d;
+  width: 50%;
+}
+
+.site-footer .bottom .info a {
+  text-decoration: underline;
+  margin-left: 40px;
+}
+
+.site-footer .bottom .navigation {
+  padding-top: 15px;
+}
+
+.site-footer .bottom .navigation nav {
+  margin-bottom: 10px;
+}
+
+.site-footer .bottom .navigation nav a {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 300;
+  margin-right: 20px;
+}
