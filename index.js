@@ -9,11 +9,11 @@ const swiper = new Swiper('#swiper-team', {
       slidesPerView: 2,
     },
     // when window width is >= 480px
-    480: {
+    1175: {
       slidesPerView: 3,
     },
     // when window width is >= 640px
-    640: {
+    1470: {
       slidesPerView: 4,
     }
   },
