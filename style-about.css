@@ -1,0 +1,45 @@
+section.intro.page-about {
+  min-height: 590px;
+  background-color: #f8f8f8;
+  background-image: url(public/images/intro-school-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 65% top;
+}
+
+.page-about .block.events {
+  padding-top: 90px;
+}
+
+.page-about .block.events h2 {
+  text-align: center;
+  max-width: 90%;
+}
+
+.page-about .block.events .text-blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 50px;
+  gap: 50px;
+}
+
+.page-about .block.events .text-blocks p {
+  font-size: 20px;
+  line-height: 120%;
+  color: #616161;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+@media (max-width: 1174px) {
+  .page-about .block.events .text-blocks {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 50px;
+    gap: 0px;
+  }
+
+  .page-about .block.events .text-blocks p {
+    font-size: 14px;
+  }
+}
