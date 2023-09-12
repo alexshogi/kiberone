@@ -1,0 +1,462 @@
+@charset "utf-8";
+/***
+  The new CSS reset - version 1.8.5 (last updated 14.6.2023)
+  GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+/*
+  Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+  - The "symbol *" part is to solve Firefox SVG sprite bug
+  - The "html" attribute is exclud, because otherwise a bug in Chrome breaks the CSS hyphens property
+  (https://github.com/elad2412/the-new-css-reset/issues/36)
+*/
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+  color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+  content: initial;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+  - fix for the content editable attribute will work properly.
+  - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element */
+:where([contenteditable]:not([contenteditable="false"])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+}
+
+/* --------------------------------------------------------- */
+
+@font-face {
+  font-family: "Wix";
+  src: url(public/fonts/WixMadeforDisplay-Regular.ttf) format("ttf");
+}
+
+body {
+  font-family: "Wix", "Open Sans", "Apple sans", "Arial", sans-serif;
+  background-color: #f8f8f8;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.site-header {
+  height: 100px;
+  background-color: #f8f8f8;
+  color: #333333;
+}
+
+.site-header .container {
+  height: 100%;
+}
+
+.site-header .logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-right: 25px;
+}
+
+.site-header .logo-wrapper .company-title {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 1px;
+}
+
+.site-header nav {
+  margin-right: 100px;
+}
+
+.site-header nav a {
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.site-header nav a.active:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1px;
+  background-color: #333333;
+  width: 100%;
+  bottom: 0;
+}
+
+.site-header .header-contacts {
+  margin-right: 20px;
+}
+
+.site-header .header-contacts p {
+  font-size: 14px;
+  line-height: 120%;
+  text-align: right;
+}
+
+.site-header .header-contacts p:last-of-type {
+  margin-right: 2px;
+}
+
+.button-primary {
+  font-size: 16px;
+  height: 47px;
+  display: inline-flex;
+  border: 1px solid #333333;
+  border-radius: 42px;
+  align-items: center;
+  padding: 0 30px;
+}
+
+section.intro {
+  min-height: 590px;
+  background-color: #f8f8f8;
+  background-image: url(public/images/intro-background.png);
+  background-repeat: no-repeat;
+  background-size: 48%;
+  background-position: 65% top;
+}
+
+section.intro .text-content {
+  height: 100%;
+  max-width: 40%;
+  padding-top: 96px;
+}
+
+section.intro .text-content h1 {
+  font-size: 60px;
+  line-height: 65px;
+  margin-bottom: 30px;
+}
+
+section.intro .text-content h3 {
+  font-size: 20px;
+  line-height: 120%;
+  color: #616161;
+  max-width: 24rem;
+  margin-bottom: 40px;
+}
+
+.link-button {
+  display: inline-flex;
+  height: 67px;
+  border-radius: 42px;
+  align-items: center;
+  font-size: 20px;
+  color: #f1f1f1;
+  padding: 0 60px;
+  background-color: #333333;
+  text-decoration: none;
+  font-weight: 400;
+  white-space: nowrap;
+  transition: all 0.24s;
+}
+
+.link-button:hover {
+  color: #ffffff;
+}
+
+.block {
+
+}
+
+.block h2 {
+  font-size: 36px;
+  line-height: 120%;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.block h2 .heading-accent {
+  color: #f1bc00;
+}
+
+.info-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding-top: 15px;
+}
+
+.block.features .info-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 20px;
+}
+
+.block.features .info-cards-container .info-card {
+  padding: 35px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.block.features .info-cards-container .info-card:nth-child(2) {
+  transform: rotateZ(-6deg);
+  background-color: #f8f8f8;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%23E7B400FF' stroke-width='4' stroke-dasharray='15%2c 15' stroke-dashoffset='42' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.block.features .info-cards-container .info-card:nth-child(5) {
+  transform: rotateZ(6deg);
+  background-color: #f8f8f8;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%23E7B400FF' stroke-width='4' stroke-dasharray='15%2c 15' stroke-dashoffset='42' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.info-cards-container .info-card {
+  padding: 0;
+}
+
+.info-cards-container .info-card .info-card-icon {
+  margin-left: 10px;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.info-cards-container .info-card .info-card-icon:after {
+  height: 44px;
+  width: 44px;
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: transparent;
+  border: 1px dashed #26adb1;
+  border-radius: 50%;
+  top: -10px;
+  left: -10px;
+}
+
+.info-cards-container .info-card .info-card-icon img {
+  height: 24px;
+  width: 24px;
+}
+
+.info-cards-container .info-card h3 {
+  font-size: 24px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.info-cards-container .info-card p {
+  font-size: 20px;
+  line-height: 120%;
+  color: #616161;
+}
+
+.site-main {
+  background-color: #ffffff;
+  border-radius: 55px;
+  /* padding: 62px; */
+}
+
+.block.why {
+  padding-top: 100px;
+}
+
+.block.why,
+.block.what {
+  margin-bottom: 100px;
+}
+
+.block.what {
+  background-image: url(public/images/what-we-do-background.png);
+  background-repeat: no-repeat;
+  background-position: 0 35px;
+  background-size: 50%;
+  padding-left: 50%;
+}
+
+.block.what .content h2 {
+  text-align: left;
+}
+
+.block.what .content p {
+  font-size: 20px;
+  line-height: 130%;
+  color: #616161;
+  margin-bottom: 20px;
+}
+
+.block.what .content .actions {
+  padding-top: 18px;
+}
+
+.block.what .content .actions .link-button {
+  margin-right: 15px;
+}
+
+.block.features .content {
+  background-color: #f8f8f8;
+  border-radius: 55px;
+  padding: 100px 100px 150px 100px;
+  max-width: 1316px;
+}
+
+.heading-label {
+  padding: 5px 30px;
+  display: inline-flex;
+  align-items: center;
+  background-color: #e7b400;
+  color: #ffffff;
+  border-radius: 20px;
+  transform: rotateZ(-3deg);
+  margin-top: -5px;
+  background-image: url(public/images/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.block.offers .content {
+  padding: 100px;
+  padding-bottom: 150px;
+  max-width: 1316px;
+  background-image: url(public/images/why-certificate-background2.png);
+  background-repeat: no-repeat;
+  background-size: 104% 133%;
+  background-position: -25px -65px;
+}
+
+.block.offers h2 {
+  text-align: left;
+}
+
+.block.offers .info-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 0;
+}
+
+.block.offers .info-cards-container .info-card {
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+}
+
+.block.offers .info-cards-container .info-card h3 {
+  font-size: 36px;
+  line-height: 100%;
+  margin-bottom: 25px;
+}
+
+.block.offers .info-cards-container .info-card p {
+  font-size: 16px;
+  line-height: 120%;
+  margin-bottom: 25px;
+}
+
+.block.offers .info-cards-container .info-card img {
+  margin-bottom: 20px;
+}
+
+.block.offers .info-cards-container .info-card .button {
+  width: 100%;
+  justify-content: center;
+}
+
+.block.promotion h2 {
+  text-align: left;
+}
+
+.block.promotion h2 .heading-label {
+  margin-bottom: 10px;
+  margin-left: -30px;
+}
