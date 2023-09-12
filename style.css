@@ -557,3 +557,57 @@ section.intro .text-content h3 {
   line-height: 120%;
   color: #616161;
 }
+
+.block.reviews {
+  padding-bottom: 100px;
+}
+
+.block.reviews h2 {
+  text-align: left;
+  max-width: 70%;
+  padding-bottom: 100px;
+}
+
+.reviews-content {
+
+}
+
+.reviews-content .summary {
+
+}
+
+.reviews-content .reviews-grid {
+
+}
+
+.reviews-content .review {
+  border-radius: 25px;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.reviews-content .review .user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reviews-content .review .user-avatar {
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  margin-right: 10px;
+}
+
+.reviews-content .review .user-name {
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.reviews-content .review p {
+  color: #616161;
+  font-size: 12px;
+  line-height: 120%;
+}
