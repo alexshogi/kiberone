@@ -15,6 +15,10 @@
   display: revert;
 }
 
+.text-left {
+  text-align: left !important;
+}
+
 /* Preferred box-sizing value */
 *,
 *::before,
