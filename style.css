@@ -580,6 +580,44 @@ section.intro .text-content h3 {
   margin-right: 15px;
 }
 
+.reviews-content .summary header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.reviews-content .summary h3 {
+  font-size: 24px;
+  line-height: 120%;
+  width: 57%;
+}
+
+.reviews-content .summary h3 a {
+  color: #e7b400;
+}
+
+.reviews-content .summary .users-avatars {
+  display: flex;
+}
+
+.reviews-content .summary .users-avatar {
+  height: 70px;
+  width: 70px;
+  min-height: 70px;
+  min-width: 70px;
+  max-height: 70px;
+  max-width: 70px;
+  border: 6px solid #f8f8f8;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  margin-left: -13px;
+}
+
+.reviews-content .summary .users-avatar:first-of-type {
+  margin-left: 0;
+}
+
 .reviews-content .reviews-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
