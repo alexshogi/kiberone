@@ -116,6 +116,11 @@ meter {
   src: url(public/fonts/WixMadeforDisplay-Regular.ttf) format("ttf");
 }
 
+@font-face {
+  font-family: "Neue Machina";
+  src: url(public/fonts/NeueMachina-Regular.otf) format("orf");
+}
+
 body {
   font-family: "Wix", "Open Sans", "Apple sans", "Arial", sans-serif;
   background-color: #f8f8f8;

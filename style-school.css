@@ -160,6 +160,88 @@ section.intro.page-school {
   left: -40px;
 }
 
+.page-school .block.offers .pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 0;
+}
+
+.page-school .block.offers .pricing-cards .card {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.page-school .block.offers .pricing-cards .card h3 {
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 15px;
+}
+
+.page-school .block.offers .pricing-cards .card p {
+  font-size: 20px;
+  line-height: 120%;
+  color: #616161;
+  margin-bottom: 45px;
+  min-height: 55px;
+}
+
+.page-school .block.offers .pricing-cards .card .price {
+  font-size: 96px;
+  line-height: 120%;
+  font-family: "Neue Machina";
+  display: flex;
+  align-items: flex-start;
+}
+
+.page-school .block.offers .pricing-cards .card .price span {
+  font-size: 24px;
+  line-height: 120%;
+  font-family: "Wix";
+  font-weight: 300;
+  padding-top: 8px;
+  margin-left: 15px;
+}
+
+.page-school .block.offers .pricing-cards .card .top {
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 65px 15px 25px 50px;
+  background-color: #92d6d8;
+  border-bottom: 4px dashed #ffffff;
+}
+
+.page-school .block.offers .pricing-cards .card .bottom {
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 50px;
+  background-color: #92d6d8;
+}
+
+.page-school .block.offers .pricing-cards .card:last-of-type .top,
+.page-school .block.offers .pricing-cards .card:last-of-type .bottom {
+  background-color: #f1bc00;
+}
+
+.page-school .block.offers .pricing-cards .card ul {
+  margin-bottom: 35px;
+}
+
+.page-school .block.offers .pricing-cards .card ul li {
+  font-size: 20px;
+  line-height: 120%;
+  color: #616161;
+  margin-bottom: 15px;
+  font-weight: 300;
+  margin-left: 20px;
+  list-style-image: url(public/icons/shuriken.svg);
+}
+
+.page-school .block.offers .pricing-cards .card .button {
+  height: 63px;
+  border-radius: 23px;
+}
+
 @media (max-width: 1174px) {
   section.intro.page-school {
     min-height: calc(100vh - 100px);
