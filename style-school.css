@@ -250,4 +250,151 @@ section.intro.page-school {
     background-size: contain;
     background-position: bottom;
   }
+
+  .page-school .block.learn .content {
+    padding-right: 0;
+  }
+
+  .page-school .block.learn {
+    padding-bottom: 50px;
+    background-image: none;
+  }
+
+  .page-school .block.learn .actions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-school .block.learn .actions .button:first-of-type {
+    margin-bottom: 25px;
+  }
+
+  .page-school .block.learn .timetable-elem {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 30px;
+  }
+
+  .page-school .block.learn .timetable-elem img {
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+  }
+
+  .page-school .block.learn .actions .button {
+    height: 52px;
+    display: inline-flex;
+    border-radius: 42px;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 40px;
+    text-decoration: none;
+    font-weight: 400;
+    white-space: nowrap;
+    transition: all 0.24s;
+    max-width: fit-content;
+    margin-right: 0;
+  }
+
+  .page-school .block.learn p {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .page-school .block.program {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  .page-school .block.program .heading-text {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  .page-school .block.program .info-cards-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .page-school .block.program .info-cards-container .info-card h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .page-school .block.program .lists {
+    overflow-x: auto;
+  }
+
+  .page-school .block.program .lists ul {
+    min-width: 200px;
+  }
+
+  .page-school .block.program .lists ul li {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    position: relative;
+    margin-left: 30px;
+  }
+
+  .page-school .block.program .lists ul li:before {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: transparent;
+    border: 1px dashed #26adb1;
+    border-radius: 50%;
+    top: 0;
+    left: -30px;
+  }
+
+  .page-school .block.offers .pricing-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .page-school .block.offers .pricing-cards .card .top {
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 60px 30px 25px 30px;
+    background-color: #92d6d8;
+    border-bottom: 2px dashed #ffffff;
+  }
+
+  .page-school .block.offers .pricing-cards .card h3 {
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 15px;
+  }
+
+  .page-school .block.offers .pricing-cards .card p {
+    font-size: 16px;
+    line-height: 120%;
+    color: #616161;
+    margin-bottom: 40px;
+    min-height: 50px;
+  }
+
+  .page-school .block.offers .pricing-cards .card .price {
+    font-size: 64px;
+  }
+
+  .page-school .block.offers .pricing-cards .card .price span {
+    font-size: 16px;
+    padding-top: 6px;
+    margin-left: 12px;
+  }
+
+  .page-school .block.offers .pricing-cards .card ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 16px;
+  }
 }
